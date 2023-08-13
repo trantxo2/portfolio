@@ -45,3 +45,17 @@ p {
   font-size: 40px;
   color: aqua;
 }
+.socialmedia-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.socialmedia-container img {
+  width: 60px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+.aqua-icon {
+  fill: aqua;
+}
