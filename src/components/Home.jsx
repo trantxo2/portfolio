@@ -20,7 +20,9 @@ function Home() {
               </a>
             </div>
             <div className="aqua-icon">
-              <img src="/linkedin.svg" alt="" />
+              <a href="https://www.linkedin.com/in/inaki09">
+                <img src="/linkedin.svg" alt="" />
+              </a>
             </div>
             <div className="aqua-icon">
               <img src="/instagram.svg" alt="" />
