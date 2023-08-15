@@ -30,7 +30,7 @@ function Home() {
           </div>
         </div>
         <div className="image-container">
-          <img src="/avatar.png" alt=""></img>
+          <img className="profile-image" src="/profile.png" alt=""></img>
         </div>
       </div>
     </div>
