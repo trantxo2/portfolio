@@ -20,21 +20,23 @@ function Home() {
             ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
           </p>
           <div className="socialmedia-container">
-            <div className="aqua-icon">
+            <div id="media-icons">
               <a href="https://github.com/trantxo2">
                 <img src="/github.svg" alt="" />
               </a>
             </div>
-            <div className="aqua-icon">
+            <div id="media-icons">
               <a href="https://www.linkedin.com/in/inaki09">
                 <img src="/linkedin.svg" alt="" />
               </a>
             </div>
-            <div className="aqua-icon">
+            <div id="media-icons">
               <img src="/instagram.svg" alt="" />
             </div>
           </div>
-          <DownloadButton />
+          <div className="downloadButton-container">
+            <DownloadButton />
+          </div>
         </div>
         <div className="image-container">
           <img className="profile-image" src="/profile.png" alt=""></img>

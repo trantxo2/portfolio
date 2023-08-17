@@ -5,12 +5,14 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-title">Portfolio.</div>
-      <div className="header-pages">
-        <div>Inicio</div>
-        <div>Sobre mi</div>
-        <div>Portfolio</div>
-        <div>Contacto</div>
-      </div>
+      <nav className="navbar">
+        <a href="#home" className="active">
+          Inicio
+        </a>
+        <a href="#about">Sobre mi</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
     </div>
   );
 }
