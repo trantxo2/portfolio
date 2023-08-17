@@ -1,15 +1,15 @@
 .home-container {
   display: flex;
   align-items: center;
-  min-height: 100vh;
 }
 .main-container {
+  min-height: 100vh;
+  padding: 10rem 9%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .info-container {
-  margin-left: 40px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,9 @@
   font-size: 1.6rem;
   color: var(--text-color);
 }
+.info-container a {
+  margin-bottom: 2rem;
+}
 
 .animated-text {
   color: var(--main-color);
@@ -60,6 +63,8 @@
 }
 
 .home-image-container {
+  display: flex;
+  justify-content: center;
   position: relative;
   flex: 1;
 }
@@ -101,10 +106,4 @@
 }
 .socialmedia-container img:hover {
   transform: scale(1.2);
-}
-
-.downloadButton-container {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
 }

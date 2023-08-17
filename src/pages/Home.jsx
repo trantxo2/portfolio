@@ -18,19 +18,15 @@ function Home() {
             ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
           </p>
           <div className="socialmedia-container">
-            <div id="media-icon">
-              <a href="https://github.com/trantxo2">
-                <img src="/github.svg" alt="" />
-              </a>
-            </div>
-            <div id="media-icons">
-              <a href="https://www.linkedin.com/in/inaki09">
-                <img src="/linkedin.svg" alt="" />
-              </a>
-            </div>
-            <div id="media-icons">
+            <a href="https://github.com/trantxo2">
+              <img src="/github.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/inaki09">
+              <img src="/linkedin.svg" alt="" />
+            </a>
+            <a href="a">
               <img src="/instagram.svg" alt="" />
-            </div>
+            </a>
           </div>
           <div className="downloadButton-container">
             <DownloadButton />
