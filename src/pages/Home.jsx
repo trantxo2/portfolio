@@ -22,16 +22,18 @@ function Home() {
           <div className="socialmedia-container">
             <div id="media-icons">
               <a href="https://github.com/trantxo2">
-                <img src="/github.svg" alt="" />
+                <i className="bx bxl-github"></i>
               </a>
             </div>
             <div id="media-icons">
               <a href="https://www.linkedin.com/in/inaki09">
-                <img src="/linkedin.svg" alt="" />
+                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
             <div id="media-icons">
-              <img src="/instagram.svg" alt="" />
+              <a href="https://github.com/trantxo2">
+                <i className="bx bxl-instagram"></i>
+              </a>
             </div>
           </div>
           <div className="downloadButton-container">
