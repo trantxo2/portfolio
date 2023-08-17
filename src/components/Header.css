@@ -29,3 +29,8 @@
 .navbar a.active {
   color: var(--main-color);
 }
+#menu-icon {
+  color: var(--text-color);
+  font-size: 3.6rem;
+  display: none;
+}

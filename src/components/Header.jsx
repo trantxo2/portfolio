@@ -5,6 +5,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-title">Portfolio.</div>
+      <i className="bx bx-menu" id="menu-icon"></i>
       <nav className="navbar">
         <a href="#home" className="active">
           Inicio
