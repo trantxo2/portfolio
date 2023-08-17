@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import DownloadButton from '../components/downloadButton';
 
 function Home() {
   return (
@@ -8,7 +9,12 @@ function Home() {
         <div className="info-container">
           <h2>¡Hola! Me llamo </h2>
           <h1>Iñaki Trantxo</h1>
-          <h2>Y soy Desarrollador Frontend</h2>
+          <div className="info-details-container">
+            <h2>Y soy </h2>
+            <h2 className="info-details-animated-text">
+              Desarrollador Frontend
+            </h2>
+          </div>
           <p>
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
             ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
@@ -28,6 +34,7 @@ function Home() {
               <img src="/instagram.svg" alt="" />
             </div>
           </div>
+          <DownloadButton />
         </div>
         <div className="image-container">
           <img className="profile-image" src="/profile.png" alt=""></img>
