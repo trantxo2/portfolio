@@ -10,7 +10,7 @@ function Header() {
         <a href="#home" className="active">
           Inicio
         </a>
-        <a href="#about">Sobre mi</a>
+        <a href="src/pages/About.jsx">Sobre mi</a>
         <a href="#proyects">Proyectos</a>
         <a href="#contact">Contacto</a>
       </nav>

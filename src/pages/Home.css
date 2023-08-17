@@ -1,13 +1,5 @@
-.home-container {
-  display: flex;
-  align-items: center;
-}
-.main-container {
-  min-height: 100vh;
+.home {
   padding: 10rem 9%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .info-container {
   flex: 1;
@@ -62,13 +54,13 @@
   }
 }
 
-.home-image-container {
+.image-container {
   display: flex;
   justify-content: center;
   position: relative;
   flex: 1;
 }
-.home-image-container img {
+.image-container img {
   width: 35vw;
   animation: floatAnimation 3s ease-in-out infinite;
   max-width: 65%;
