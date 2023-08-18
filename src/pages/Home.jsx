@@ -4,7 +4,7 @@ import DownloadButton from '../components/downloadButton';
 
 function Home() {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <div className="info-container">
         <h2>¡Hola! Me llamo </h2>
         <h1>Iñaki Trantxo</h1>

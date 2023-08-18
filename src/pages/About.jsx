@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
   return (
-    <section className="about" id="about">
+    <section id="about" className="about">
       <div className="about-container">
         <div className="about-image">
           <img src="/profile.png" alt="" />
@@ -15,10 +15,19 @@ function About() {
           </h1>
           <h2>Desarrollador Frontend</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            quo libero ea, consequatur accusamus est, consectetur iure omnis
-            labore unde soluta ratione sit culpa quidem expedita aliquam
-            inventore? Quisquam, exercitationem.
+            ¡Saludos a todos! Mi nombre es Iñaki Trantxo Azcarate, y a mis 24
+            años, me considero un entusiasta de la informática y un apasionado
+            de la programación.
+          </p>
+          <p>
+            Mi objetivo actual es sumergirme en emocionantes nuevos proyectos
+            que puedan nutrir mi pasión, al mismo tiempo que expandir y
+            enriquecer mis habilidades y conocimientos en el campo.
+          </p>
+          <p>
+            Estoy ansioso por formar parte de equipos dinámicos y colaborativos,
+            donde pueda aportar mi dedicación y creatividad para alcanzar metas
+            ambiciosas.
           </p>
         </div>
       </div>
