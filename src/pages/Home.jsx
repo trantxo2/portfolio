@@ -13,8 +13,10 @@ function Home() {
           <h2 className="animated-text">Desarrollador Frontend</h2>
         </div>
         <p>
-          lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-          ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+          Futuro desarrollador frontend junior y amante del diseño web. Me
+          emociona convertir ideas en código a través de HTML, CSS y JavaScript
+          para crear experiencias geniales. ¡Tengo muchas ganas para aprender y
+          crecer en el mundo digital!
         </p>
         <div className="socialmedia-container">
           <a href="https://github.com/trantxo2">
