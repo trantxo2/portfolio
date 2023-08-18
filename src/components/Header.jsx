@@ -3,7 +3,9 @@ import './Header.css';
 function Header() {
   return (
     <div className="header-container">
-      <div className="header-title">Portfolio.</div>
+      <div className="header-title">
+        <a href="#home">Portfolio.</a>
+      </div>
 
       <i className="bx bx-menu" id="menu-icon"></i>
 
