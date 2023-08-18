@@ -1,32 +1,41 @@
 import React from 'react';
 import './Contact.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
+  const [state, handleSubmit] = useForm('mzblrpba');
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
     <section id="contact" className="contact">
       <h1 className="contact-title">
         Contacta <span>conmigo!</span>
       </h1>
 
-      <form
-        action="
-      #"
-      >
+      <form onSubmit={handleSubmit}>
         <div className="input-box">
-          <input type="text" placeholder="Nombre y apellidos" />
-          <input type="email" placeholder="Dirección de correo" />
+          <input type="text" name="name" placeholder="Nombre y apellidos" />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Direccion de correo"
+          />
         </div>
         <div className="input-box">
-          <input type="number" placeholder="teléfono" />
-          <input type="text" placeholder="Asunto" />
+          <input type="phone" name="phone" placeholder="teléfono" />
+          <input type="text" name="subject" placeholder="Asunto" />
         </div>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Tu mensaje"
-        ></textarea>
+        <textarea id="message" name="message" placeholder="Mensaje" />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
         <button type="submit">Enviar</button>
       </form>
     </section>

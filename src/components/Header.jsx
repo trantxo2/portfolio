@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+
 function Header() {
+  const location = useLocation();
+
   return (
     <div className="header-container">
       <div className="header-title">
@@ -10,12 +14,22 @@ function Header() {
       <i className="bx bx-menu" id="menu-icon"></i>
 
       <nav className="navbar">
-        <a href="#home" className="active">
+        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
           Inicio
-        </a>
-        <a href="#about">Sobre Mi</a>
-        <a href="#proyects">Proyectos</a>
-        <a href="#contact">Contacto</a>
+        </Link>
+        <Link
+          to="/about"
+          className={location.pathname === '/about' ? 'active' : ''}
+        >
+          Sobre Mi
+        </Link>
+        <Link
+          to="/contact"
+          className={location.pathname === '/contact' ? 'active' : ''}
+        >
+          Contacto
+        </Link>
+        {/* <a href="#proyects">Proyectos</a> */}
       </nav>
     </div>
   );
