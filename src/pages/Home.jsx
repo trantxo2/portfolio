@@ -34,10 +34,12 @@ function Home() {
           <DownloadButton />
         </div>
       </div>
+
       <div className="image-container">
-        <img className="home-image" src="/profile.png" alt=""></img>
+        <img className="home-image" src="/profile.png" alt="" />
       </div>
     </section>
   );
 }
+
 export default Home;

@@ -20,9 +20,10 @@ function Header() {
           navLinks.forEach((link) => {
             link.classList.remove('active');
           });
-          document
-            .querySelector('.navbar a[href*=' + id + ']')
-            .classList.add('active');
+          const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
+          if (activeLink) {
+            activeLink.classList.add('active');
+          }
         }
       });
     };
