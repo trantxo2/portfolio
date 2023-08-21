@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
+import ScrollReveal from 'scrollreveal';
 
 function About() {
+  useEffect(() => {
+    const scrollReveal = ScrollReveal({
+      origin: 'top',
+      duration: 2000,
+      distance: '80px',
+      delay: 200,
+    });
+
+    scrollReveal.reveal('.content-title', { delay: 0 });
+
+    return () => {
+      scrollReveal.destroy();
+    };
+  }, []);
   return (
     <section id="about" className="about">
       <div className="about-container">
