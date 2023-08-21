@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 function Header() {
+  const [menuActive, setMenuActive] = useState(false);
+
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.navbar a');
@@ -27,17 +29,18 @@ function Header() {
 
     window.addEventListener('scroll', handleScroll);
 
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navbar');
-    menuIcon.onclick = () => {
-      menuIcon.classList.toggle('bx-x');
-      navbar.classList.toggle('active');
-    };
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
+  const closeMenu = () => {
+    setMenuActive(false);
+  };
 
   return (
     <div className="header-container">
@@ -45,14 +48,22 @@ function Header() {
         <a href="#home">Portfolio.</a>
       </div>
 
-      <i className="bx bx-menu" id="menu-icon"></i>
+      <i
+        className={`bx ${menuActive ? 'bx-x' : 'bx-menu'}`}
+        id="menu-icon"
+        onClick={toggleMenu}
+      ></i>
 
-      <nav className="navbar">
-        <a href="#home" className="active">
+      <nav className={`navbar ${menuActive ? 'active' : ''}`}>
+        <a href="#home" className="active" onClick={closeMenu}>
           Inicio
         </a>
-        <a href="#about">Sobre mí</a>
-        <a href="#contact">Contacto</a>
+        <a href="#about" onClick={closeMenu}>
+          Sobre mí
+        </a>
+        <a href="#contact" onClick={closeMenu}>
+          Contacto
+        </a>
       </nav>
     </div>
   );
