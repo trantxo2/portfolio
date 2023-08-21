@@ -38,3 +38,11 @@
 .contact button {
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  .contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

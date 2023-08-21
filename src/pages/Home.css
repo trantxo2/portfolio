@@ -14,6 +14,8 @@
 }
 
 .info-container h2 {
+  display: flex;
+  flex-direction: row;
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -33,7 +35,8 @@
   margin-bottom: 2rem;
 }
 
-.animated-text {
+.info-container h2 span {
+  margin-left: 1rem;
   color: var(--main-color);
   display: block;
   white-space: nowrap;
@@ -98,4 +101,57 @@
 }
 .socialmedia-container img:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1385px) {
+  .home {
+    flex-direction: column;
+  }
+  .info-container h2 {
+    font-size: 2.6rem;
+  }
+  .info-container h1 {
+    font-size: 5rem;
+  }
+
+  .image-container img {
+    width: 90vw;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 498px) {
+  .home {
+    padding: 5rem 5%;
+  }
+
+  .info-container {
+    margin-top: 2.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-container h2 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .socialmedia-container {
+    margin-left: 4rem;
+  }
+  .image-container {
+    order: -1;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .socialmedia-container {
+    order: 2;
+    text-align: center;
+  }
+
+  .downloadButton-container {
+    order: 3;
+    margin-top: 2rem;
+    text-align: center;
+  }
 }

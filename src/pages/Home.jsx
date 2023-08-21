@@ -9,8 +9,9 @@ function Home() {
         <h2>¡Hola! Me llamo </h2>
         <h1>Iñaki Trantxo</h1>
         <div className="info-details-container">
-          <h2>Y soy </h2>
-          <h2 className="animated-text">Desarrollador Frontend</h2>
+          <h2>
+            Y soy <span> Desarrollador Frontend</span>
+          </h2>
         </div>
         <p>
           Futuro desarrollador frontend junior y amante del diseño web. Me

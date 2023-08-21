@@ -32,3 +32,44 @@
 .navbar a.active {
   color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+  #menu-icon {
+    font-size: 3.6rem;
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  #menu-icon {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+}
