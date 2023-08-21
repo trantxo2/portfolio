@@ -43,11 +43,7 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
-  #menu-icon {
-    color: var(--text-color);
-    font-size: 3.6rem;
-    display: none;
-  }
+
   .header-containter {
     padding: 2rem 3%;
   }
@@ -58,6 +54,7 @@ button:hover {
 
 @media (max-width: 768px) {
   #menu-icon {
+    font-size: 3.6rem;
     display: block;
   }
 
@@ -76,12 +73,23 @@ button:hover {
   }
 
   .navbar.active {
-    display: block;
+    display: flex;
   }
 
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Ocultar el icono del menú */
+  #menu-icon {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
   }
 }
