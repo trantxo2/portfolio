@@ -19,8 +19,6 @@
 }
 .navbar {
   font-size: 1.7rem;
-  display: flex;
-  flex-direction: row;
 }
 .navbar a {
   margin-left: 4rem;
@@ -29,9 +27,4 @@
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
-}
-#menu-icon {
-  color: var(--text-color);
-  font-size: 3.6rem;
-  display: none;
 }
