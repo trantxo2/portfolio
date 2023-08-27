@@ -1,22 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './About.css';
-import ScrollReveal from 'scrollreveal';
 
 function About() {
-  useEffect(() => {
-    const scrollReveal = ScrollReveal({
-      origin: 'top',
-      duration: 2000,
-      distance: '80px',
-      delay: 200,
-    });
-
-    scrollReveal.reveal('.content-title', { delay: 0 });
-
-    return () => {
-      scrollReveal.destroy();
-    };
-  }, []);
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -25,7 +10,7 @@ function About() {
         </div>
 
         <div className="about-content">
-          <h1 className="content-title">
+          <h1 className="title">
             Sobre <span>Mi</span>
           </h1>
           <h2>Desarrollador Frontend</h2>
@@ -44,6 +29,7 @@ function About() {
             donde pueda aportar mi dedicación y creatividad para alcanzar metas
             ambiciosas.
           </p>
+          <button>Saber más</button>
         </div>
       </div>
     </section>

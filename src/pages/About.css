@@ -16,11 +16,6 @@
   background-color: var(--bg-color);
 }
 
-.content-title {
-  text-align: center;
-  font-size: 4.5rem;
-}
-
 .about-content h1 {
   text-align: left;
   line-height: 1.2;

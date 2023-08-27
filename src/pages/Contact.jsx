@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <h1 className="contact-title">
+      <h1 className="title">
         Contacta <span>conmigo!</span>
       </h1>
 
