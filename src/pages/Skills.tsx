@@ -10,7 +10,7 @@ function Skills() {
 
       <div className="skills-container">
         <div className="skills-box">
-          <i class="bx bxl-react"></i>
+          <i className="bx bxl-react"></i>
           <h2>React</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -22,7 +22,7 @@ function Skills() {
         </div>
 
         <div className="skills-box">
-          <i class="bx bxl-css3"></i> <h2>CSS3</h2>
+          <i className="bx bxl-css3"></i> <h2>CSS3</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             aspernatur, accusantium vitae praesentium dolorem earum placeat
@@ -33,7 +33,7 @@ function Skills() {
         </div>
 
         <div className="skills-box">
-          <i class="bx bxl-html5"></i>
+          <i className="bx bxl-html5"></i>
           <h2>HTML5</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis

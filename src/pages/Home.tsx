@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import DownloadButton from '../components/downloadButton';
+import Typed from 'typed.js';
 
 function Home() {
+  const [typedText] = useState('');
+  const textElement = React.useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(textElement.current, {
+      strings: ['Junior', 'Frontend Developer'],
+      typeSpeed: 50,
+      onComplete: () => {
+        // You can set a delay before erasing if needed
+        setTimeout(() => {
+          typed.reset(); // Reset typed instance to play the typing effect again
+        }, 2000); // Adjust the delay as needed
+      },
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section id="home" className="home">
       <div className="info-container">
@@ -10,15 +31,15 @@ function Home() {
         <h1>Iñaki Trantxo</h1>
         <div className="info-details-container">
           <h2>
-            Y soy <span> Desarrollador Frontend</span>
+            Y soy <span ref={textElement} key={typedText} />
           </h2>
+          <p>
+            Futuro desarrollador frontend junior y amante del diseño web. Me
+            emociona convertir ideas en código a través de HTML, CSS y
+            JavaScript para crear experiencias geniales. ¡Tengo muchas ganas
+            para aprender y crecer en el mundo digital!
+          </p>
         </div>
-        <p>
-          Futuro desarrollador frontend junior y amante del diseño web. Me
-          emociona convertir ideas en código a través de HTML, CSS y JavaScript
-          para crear experiencias geniales. ¡Tengo muchas ganas para aprender y
-          crecer en el mundo digital!
-        </p>
         <div className="socialmedia-container">
           <a href="https://github.com/trantxo2">
             <img src="/github.svg" alt="" />
