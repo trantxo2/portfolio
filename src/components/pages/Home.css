@@ -83,7 +83,7 @@
   align-items: center;
 }
 
-.socialmedia-container img {
+.icon {
   width: 4rem;
   height: 4rem;
   margin-right: 50px;
@@ -91,7 +91,7 @@
   padding-left: 10px;
   transition: transform 0.3s ease;
 }
-.socialmedia-container img:hover {
+.icon:hover {
   transform: scale(1.2);
 }
 

@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import DownloadButton from '../components/downloadButton';
+import DownloadButton from '../downloadButton';
 import Typed from 'typed.js';
+import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
+import { ReactComponent as GithubInIcon } from '../../assets/github.svg';
+import { ReactComponent as InstagramInIcon } from '../../assets/instagram.svg';
+import ProfileImage from '../../assets/Profile.png';
 
 function Home() {
   const [typedText] = useState('');
@@ -42,13 +46,13 @@ function Home() {
         </div>
         <div className="socialmedia-container">
           <a href="https://github.com/trantxo2">
-            <img src="/github.svg" alt="" />
+            <GithubInIcon className="icon" />
           </a>
           <a href="https://www.linkedin.com/in/inaki09">
-            <img src="/linkedin.svg" alt="" />
+            <LinkedInIcon className="icon" />
           </a>
           <a href="a">
-            <img src="/instagram.svg" alt="" />
+            <InstagramInIcon className="icon" />
           </a>
         </div>
         <div className="downloadButton-container">
@@ -57,7 +61,7 @@ function Home() {
       </div>
 
       <div className="image-container">
-        <img className="home-image" src="/profile.png" alt="" />
+        <img src={ProfileImage} alt="" />
       </div>
     </section>
   );
