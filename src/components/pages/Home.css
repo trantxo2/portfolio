@@ -77,12 +77,6 @@
   }
 }
 
-.socialmedia-container {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
 .icon {
   width: 4rem;
   height: 4rem;
