@@ -1,0 +1,62 @@
+import React from 'react';
+import './Proyects.css';
+import FlutterApp from '../../assets/Flutter_app.png';
+import GiffApp from '../../assets/GiffApp.png';
+import PokeApi from '../../assets/PokeApi.png';
+
+function Proyects() {
+  return (
+    <section id="proyects" className="proyects">
+      <h1 className="title">
+        Mis <span>Proyectos</span>
+      </h1>
+
+      <div className="proyects-container">
+        <div className="proyect-box">
+          <img src={FlutterApp} alt="" />
+          <div className="poryect-layer">
+            <h3>SM Institute Flutter App </h3>
+            <p>
+              App de Flutter para el "Saint Martin's Institute of Higher
+              Education", para realizar un seguimiento automático de la
+              asistencia de los estudiantes en su lección a través de bluetooth
+              y mostrar su horario. Además incluye su propia mensajería.
+            </p>
+            <a href="https://github.com/lewinpauli/PublicFlutterAppSMI">
+              <i className="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div className="proyect-box">
+          <img src={GiffApp} alt="" />
+          <div className="poryect-layer">
+            <h3>GuiffAffinity </h3>
+            <p>
+              App Buscador de Gifs creada con React y Typescript. Desarrollada
+              mediante testing. Incluye su propio backend.
+            </p>
+            <a href="https://github.com/IvanSolaDelgado/bikoVehicular">
+              <i className="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div className="proyect-box">
+          <img src={PokeApi} alt="" />
+          <div className="poryect-layer">
+            <h3>Poke Api </h3>
+            <p>
+              Clásica Api de para buscar Pokemons creada con Javascript, Html y
+              Css.
+            </p>
+            <a href="https://github.com/trantxo2/pokedex-api">
+              <i className="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+export default Proyects;

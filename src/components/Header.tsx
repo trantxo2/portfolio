@@ -65,6 +65,9 @@ function Header() {
         <a href="#skills" onClick={closeMenu}>
           Habilidades
         </a>
+        <a href="#proyects" onClick={closeMenu}>
+          Proyectos
+        </a>
         <a href="#contact" onClick={closeMenu}>
           Contacto
         </a>
