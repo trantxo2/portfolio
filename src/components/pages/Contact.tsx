@@ -1,17 +1,20 @@
 import React from 'react';
 import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
+import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
+import { ReactComponent as GithubInIcon } from '../../assets/github.svg';
+import { ReactComponent as InstagramInIcon } from '../../assets/instagram.svg';
 
 function Contact() {
   const [state, handleSubmit] = useForm('mzblrpba');
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>ENVIADO!</p>;
   }
 
   return (
     <section id="contact" className="contact">
       <h1 className="title">
-        Contacta <span>conmigo!</span>
+        ¡Contacta <span>conmigo!</span>
       </h1>
 
       <form onSubmit={handleSubmit}>
@@ -21,11 +24,11 @@ function Contact() {
             id="email"
             type="email"
             name="email"
-            placeholder="Direccion de correo"
+            placeholder="Dirección de correo"
           />
         </div>
         <div className="input-box">
-          <input type="phone" name="phone" placeholder="teléfono" />
+          <input type="phone" name="phone" placeholder="Teléfono" />
           <input type="text" name="subject" placeholder="Asunto" />
         </div>
         <textarea id="message" name="message" placeholder="Mensaje" />
@@ -38,6 +41,17 @@ function Contact() {
         />
         <button type="submit">Enviar</button>
       </form>
+      <div className="contact-socialmedia-container">
+        <a href="https://github.com/trantxo2">
+          <GithubInIcon className="icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/inaki09">
+          <LinkedInIcon className="icon" />
+        </a>
+        <a href="a">
+          <InstagramInIcon className="icon" />
+        </a>
+      </div>
     </section>
   );
 }

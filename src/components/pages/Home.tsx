@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
 import { ReactComponent as GithubInIcon } from '../../assets/github.svg';
 import { ReactComponent as InstagramInIcon } from '../../assets/instagram.svg';
-import ProfileImage from '../../assets/Profile.png';
+import ProfileImage from '../../assets/Profile2.png';
 
 function Home() {
   const [typedText] = useState('');
@@ -32,7 +32,7 @@ function Home() {
     <section id="home" className="home">
       <div className="info-container">
         <h2>¡Hola! Me llamo </h2>
-        <h1>Iñaki Trantxo</h1>
+        <h1>Iñaki Trantxo,</h1>
         <div className="info-details-container">
           <h2>
             Y soy <span ref={textElement} key={typedText} />
