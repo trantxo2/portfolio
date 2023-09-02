@@ -11,13 +11,11 @@
   border: none;
   scroll-behavior: smooth;
   color: white;
-
-  margin: 0;
 }
 
 :root {
   --bg-color: #282c34;
   --second-bg-color: #323946;
   --text-color: white;
-  --main-color: aqua;
+  --main-color: #3ae7be;
 }

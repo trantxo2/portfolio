@@ -29,6 +29,7 @@
   margin-bottom: 2rem;
 }
 .info-container p {
+  text-align: justify;
   font-size: 1.6rem;
   color: var(--text-color);
 }
@@ -77,15 +78,18 @@
   }
 }
 
-.icon {
+.home .info-container #icon {
+  color: var(--main-color);
+  font-size: 4rem;
   width: 4rem;
   height: 4rem;
-  margin-right: 50px;
-  margin-top: 20px;
-  padding-left: 10px;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
   transition: transform 0.3s ease;
 }
-.icon:hover {
+#icon:hover {
   transform: scale(1.2);
 }
 
@@ -140,10 +144,9 @@
     order: 2;
     text-align: center;
   }
-
-  .downloadButton-container {
-    order: 3;
-    margin-top: 2rem;
-    text-align: center;
-  }
+}
+.downloadButton-container {
+  order: 3;
+  margin-top: 2rem;
+  text-align: center;
 }

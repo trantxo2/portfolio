@@ -2,16 +2,18 @@ import React from 'react';
 import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
 
+import SocialMediaIcons from 'components/socialMediaIcons';
+
 function Contact() {
   const [state, handleSubmit] = useForm('mzblrpba');
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>ENVIADO!</p>;
   }
 
   return (
     <section id="contact" className="contact">
       <h1 className="title">
-        Contacta <span>conmigo!</span>
+        ¡Contacta <span>conmigo!</span>
       </h1>
 
       <form onSubmit={handleSubmit}>
@@ -21,11 +23,11 @@ function Contact() {
             id="email"
             type="email"
             name="email"
-            placeholder="Direccion de correo"
+            placeholder="Dirección de correo"
           />
         </div>
         <div className="input-box">
-          <input type="phone" name="phone" placeholder="teléfono" />
+          <input type="phone" name="phone" placeholder="Teléfono" />
           <input type="text" name="subject" placeholder="Asunto" />
         </div>
         <textarea id="message" name="message" placeholder="Mensaje" />
@@ -38,6 +40,7 @@ function Contact() {
         />
         <button type="submit">Enviar</button>
       </form>
+      <SocialMediaIcons />
     </section>
   );
 }

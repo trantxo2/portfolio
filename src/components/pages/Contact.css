@@ -39,6 +39,19 @@
   margin-top: 3rem;
 }
 
+.contact-socialmedia-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-socialmedia-container .icon {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .title {
     display: flex;
