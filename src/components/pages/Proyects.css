@@ -9,6 +9,53 @@
 .proyects span {
   color: var(--main-color);
 }
+.carrusel {
+  scroll-behavior: unset;
+  width: 100%;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.item-carrusel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-carrusel {
+  height: 100%;
+}
+
+.arrows-carrusel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#photo-carrusel-1 {
+  background-color: rgb(133, 133, 234);
+}
+#photo-carrusel-2 {
+  background-color: rgb(126, 235, 159);
+}
+#photo-carrusel-3 {
+  background-color: rgb(244, 123, 141);
+}
+
+.arrows-carrusel a {
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+.arrows-carrusel a:hover {
+  transform: scale(1.2);
+}
 .proyects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,13 +64,11 @@
 }
 
 .proyect-box {
-  position: relative;
-  border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
-.poryect-layer {
+.proyect-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,14 +82,16 @@
   text-align: center;
   padding: 0, 4rem;
 }
-.poryect-layer h3 {
+.proyect-layer h3 {
   font-size: 3rem;
 }
-.poryect-layer p {
+.proyect-layer p {
+  padding: 10rem 20rem 10rem 20rem;
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
 }
-.poryect-layer a {
+.photo-carrusel a {
+  z-index: 1;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -53,16 +100,16 @@
   background: var(--text-color);
   border-radius: 50%;
 }
-.poryect-layer a:hover {
+.photo-carrusel a:hover {
   transform: scale(1.2);
 }
-.poryect-layer a i {
+.photo-carrusel a i {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
 
 .proyect-box img {
   width: 100%;
-  height: 550px;
+  height: 100%;
   object-fit: cover;
 }
