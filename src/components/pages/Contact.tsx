@@ -1,9 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
-import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
-import { ReactComponent as GithubInIcon } from '../../assets/github.svg';
-import { ReactComponent as InstagramInIcon } from '../../assets/instagram.svg';
+
+import SocialMediaIcons from 'components/socialMediaIcons';
 
 function Contact() {
   const [state, handleSubmit] = useForm('mzblrpba');
@@ -41,17 +40,7 @@ function Contact() {
         />
         <button type="submit">Enviar</button>
       </form>
-      <div className="contact-socialmedia-container">
-        <a href="https://github.com/trantxo2">
-          <GithubInIcon className="icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/inaki09">
-          <LinkedInIcon className="icon" />
-        </a>
-        <a href="a">
-          <InstagramInIcon className="icon" />
-        </a>
-      </div>
+      <SocialMediaIcons />
     </section>
   );
 }

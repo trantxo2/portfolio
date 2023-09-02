@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import DownloadButton from '../downloadButton';
 import Typed from 'typed.js';
-import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg';
-import { ReactComponent as GithubInIcon } from '../../assets/github.svg';
-import { ReactComponent as InstagramInIcon } from '../../assets/instagram.svg';
 import ProfileImage from '../../assets/Profile2.png';
+import SocialMediaIcons from 'components/socialMediaIcons';
 
 function Home() {
   const [typedText] = useState('');
@@ -44,17 +42,9 @@ function Home() {
             para aprender y crecer en el mundo digital!
           </p>
         </div>
-        <div className="socialmedia-container">
-          <a href="https://github.com/trantxo2">
-            <GithubInIcon className="icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/inaki09">
-            <LinkedInIcon className="icon" />
-          </a>
-          <a href="a">
-            <InstagramInIcon className="icon" />
-          </a>
-        </div>
+
+        <SocialMediaIcons />
+
         <div className="downloadButton-container">
           <DownloadButton />
         </div>

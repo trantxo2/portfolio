@@ -1,0 +1,14 @@
+#icon {
+  color: var(--main-color);
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+#icon:hover {
+  transform: scale(1.2);
+}
