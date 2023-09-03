@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
 import './Home.css';
-import DownloadButton from '../downloadButton';
-import Typed from 'typed.js';
-import ProfileImage from '../../assets/Profile2.png';
+
 import SocialMediaIcons from 'components/socialMediaIcons';
+import React, { useEffect, useState } from 'react';
+import Typed from 'typed.js';
+
+import ProfileImage from '../../../assets/Profile2.png';
+import DownloadButton from '../../downloadButton';
 
 export const Home = () => {
   const [typedText] = useState('');
