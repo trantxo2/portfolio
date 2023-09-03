@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 import SocialMediaIcons from 'components/socialMediaIcons';
 
-function Contact() {
+export const Contact = () => {
   const [state, handleSubmit] = useForm('mzblrpba');
   if (state.succeeded) {
     return <p>ENVIADO!</p>;
@@ -43,5 +43,4 @@ function Contact() {
       <SocialMediaIcons />
     </section>
   );
-}
-export default Contact;
+};

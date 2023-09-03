@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import ProfileImage2 from '../../assets/Profile2.png';
 
-function About() {
+export const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -35,5 +35,4 @@ function About() {
       </div>
     </section>
   );
-}
-export default About;
+};
