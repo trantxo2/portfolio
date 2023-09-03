@@ -1,8 +1,11 @@
 .skills {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20rem;
 }
-
+.skills h1 {
+  margin-bottom: 4rem;
+}
 .skills span {
   color: var(--main-color);
 }

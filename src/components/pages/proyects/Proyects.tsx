@@ -1,8 +1,10 @@
-import React from 'react';
 import './Proyects.css';
-import FlutterApp from '../../assets/Flutter_app.png';
-import GiffApp from '../../assets/GiffApp.png';
-import PokeApi from '../../assets/PokeApi.png';
+
+import React from 'react';
+
+import FlutterApp from '../../../assets/Flutter_app.png';
+import GiffApp from '../../../assets/GiffApp.png';
+import PokeApi from '../../../assets/PokeApi.png';
 
 export const Proyects = () => {
   return (

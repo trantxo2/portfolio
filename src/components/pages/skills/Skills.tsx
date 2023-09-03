@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import './Skills.css';
+
+import React, { useEffect, useState } from 'react';
 
 export const Skills = () => {
   const skillsData = [

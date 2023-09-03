@@ -1,8 +1,9 @@
-import React from 'react';
 import './Contact.css';
-import { useForm, ValidationError } from '@formspree/react';
 
 import SocialMediaIcons from 'components/socialMediaIcons';
+import React from 'react';
+
+import { useForm, ValidationError } from '@formspree/react';
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm('mzblrpba');
