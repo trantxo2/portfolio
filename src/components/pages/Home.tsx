@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import ProfileImage from '../../assets/Profile2.png';
 import SocialMediaIcons from 'components/socialMediaIcons';
 
-function Home() {
+export const Home = () => {
   const [typedText] = useState('');
   const textElement = React.useRef(null);
 
@@ -55,6 +55,4 @@ function Home() {
       </div>
     </section>
   );
-}
-
-export default Home;
+};

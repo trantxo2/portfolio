@@ -4,7 +4,7 @@ import FlutterApp from '../../assets/Flutter_app.png';
 import GiffApp from '../../assets/GiffApp.png';
 import PokeApi from '../../assets/PokeApi.png';
 
-function Proyects() {
+export const Proyects = () => {
   return (
     <section id="proyects" className="proyects">
       <h1 className="title">
@@ -141,5 +141,4 @@ function Proyects() {
       {/* </div> */}
     </section>
   );
-}
-export default Proyects;
+};

@@ -1,23 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import About from './components/pages/About';
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
-import Skills from './components/pages/Skills';
-import Proyects from './components/pages/Proyects';
+import { AppRouter } from 'components/AppRouter';
+import Header from 'components/Header';
 
-function App() {
+export const App = () => {
   return (
-    <>
+    <div className="app">
       <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Proyects />
-      <Contact />
-    </>
+      <AppRouter />
+    </div>
   );
-}
-
-export default App;
+};
