@@ -9,11 +9,11 @@ import { Skills } from './pages/skills/Skills';
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/proyects" element={<Proyects />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/portfolio/" element={<Home />} />
+      <Route path="/portfolio/about" element={<About />} />
+      <Route path="/portfolio/skills" element={<Skills />} />
+      <Route path="/portfolio/proyects" element={<Proyects />} />
+      <Route path="/portfolio/contact" element={<Contact />} />
     </Routes>
   );
 };

@@ -1,9 +1,7 @@
 import './Home.css';
-
 import SocialMediaIcons from 'components/socialMediaIcons';
 import React, { useEffect, useState } from 'react';
 import Typed from 'typed.js';
-
 import ProfileImage from '../../../assets/Profile2.png';
 import DownloadButton from '../../downloadButton';
 

@@ -46,7 +46,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-title">
-        <a href="/home">Portfolio.</a>
+        <a href="/portfolio">Portfolio.</a>
       </div>
 
       <i
@@ -56,19 +56,19 @@ function Header() {
       ></i>
 
       <nav className={`navbar ${menuActive ? 'active' : ''}`}>
-        <a href="/home" className="active" onClick={closeMenu}>
+        <a href="/portfolio" className="active" onClick={closeMenu}>
           Inicio
         </a>
-        <a href="/about" onClick={closeMenu}>
+        <a href="/portfolio/about" onClick={closeMenu}>
           Sobre mí
         </a>
-        <a href="/skills" onClick={closeMenu}>
+        <a href="/portfolio/skills" onClick={closeMenu}>
           Habilidades
         </a>
-        <a href="/proyects" onClick={closeMenu}>
+        <a href="/portfolio/proyects" onClick={closeMenu}>
           Proyectos
         </a>
-        <a href="/contact" onClick={closeMenu}>
+        <a href="/portfolio/contact" onClick={closeMenu}>
           Contacto
         </a>
       </nav>
