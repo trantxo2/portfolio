@@ -9,7 +9,7 @@ import { Skills } from './pages/skills/Skills';
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/home" index element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/proyects" element={<Proyects />} />
