@@ -1,13 +1,13 @@
-.proyects {
+.projects {
   height: 100vh;
   background-color: var(--second-bg-color);
   display: flex;
   flex-direction: column;
 }
-.proyects h1 {
+.projects h1 {
   margin-bottom: 4rem;
 }
-.proyects span {
+.projects span {
   color: var(--main-color);
 }
 .carrusel {
@@ -52,21 +52,21 @@
 .arrows-carrusel a:hover {
   transform: scale(1.2);
 }
-.proyects-container {
+.projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-.proyect-box {
+.project-box {
   border-radius: 2rem;
 
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
-.proyect-layer {
+.project-layer {
   border-radius: 2rem;
   position: absolute;
   bottom: 0;
@@ -81,10 +81,10 @@
   text-align: center;
   padding: 0, 4rem;
 }
-.proyect-layer h3 {
+.project-layer h3 {
   font-size: 3rem;
 }
-.proyect-layer p {
+.project-layer p {
   padding: 5rem 20rem 5rem 20rem;
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
@@ -107,7 +107,7 @@
   color: var(--second-bg-color);
 }
 
-.proyect-box img {
+.project-box img {
   position: absolute;
   border-radius: 2rem;
 

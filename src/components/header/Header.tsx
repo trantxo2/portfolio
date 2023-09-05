@@ -20,7 +20,9 @@ function Header() {
           navLinks.forEach((link) => {
             link.classList.remove('active');
           });
-          const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
+          const activeLink = document.querySelector(
+            `.navbar a[href="/portfolio${id}"]`,
+          );
           if (activeLink) {
             activeLink.classList.add('active');
           }
@@ -43,6 +45,14 @@ function Header() {
     setMenuActive(false);
   };
 
+  const sectionsData = [
+    { id: 'home', label: 'Inicio', path: '/' },
+    { id: 'about', label: 'Sobre mí', path: '/' },
+    { id: 'skills', label: 'Habilidades', path: '/skills' },
+    { id: 'projects', label: 'Proyectos', path: '/projects' },
+    { id: 'contact', label: 'Contacto', path: '/contact' },
+  ];
+
   return (
     <div className="header-container">
       <div className="header-title">
@@ -56,21 +66,16 @@ function Header() {
       ></i>
 
       <nav className={`navbar ${menuActive ? 'active' : ''}`}>
-        <a href="/portfolio" className="active" onClick={closeMenu}>
-          Inicio
-        </a>
-        <a href="/portfolio/about" onClick={closeMenu}>
-          Sobre mí
-        </a>
-        <a href="/portfolio/skills" onClick={closeMenu}>
-          Habilidades
-        </a>
-        <a href="/portfolio/proyects" onClick={closeMenu}>
-          Proyectos
-        </a>
-        <a href="/portfolio/contact" onClick={closeMenu}>
-          Contacto
-        </a>
+        {sectionsData.map((section) => (
+          <a
+            key={section.id}
+            href={`/portfolio${section.path}`}
+            className={section.id === 'inicio' ? 'active' : ''}
+            onClick={closeMenu}
+          >
+            {section.label}
+          </a>
+        ))}
       </nav>
     </div>
   );

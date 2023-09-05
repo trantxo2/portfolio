@@ -1,14 +1,12 @@
-import './Proyects.css';
-
+import './Projects.css';
 import React from 'react';
-
 import FlutterApp from '../../../assets/Flutter_app.png';
 import GiffApp from '../../../assets/GiffApp.png';
 import PokeApi from '../../../assets/PokeApi.png';
 
-export const Proyects = () => {
+export const Projects = () => {
   return (
-    <section id="proyects" className="proyects">
+    <section id="projects" className="projects">
       <h1 className="title">
         Mis <span>Proyectos</span>
       </h1>
@@ -16,9 +14,9 @@ export const Proyects = () => {
       <div className="carrusel">
         <div className="item-carrusel" id="item-carrusel-1">
           <div className="photo-carrusel" id="photo-carrusel-1">
-            <div className="proyect-box">
+            <div className="project-box">
               <img src={FlutterApp} alt="" />
-              <div className="proyect-layer">
+              <div className="project-layer">
                 <h3>SM Institute Flutter App </h3>
                 <p>
                   App de Flutter para el "Saint Martin's Institute of Higher
@@ -45,9 +43,9 @@ export const Proyects = () => {
 
         <div className="item-carrusel" id="item-carrusel-2">
           <div className="photo-carrusel" id="photo-carrusel-2">
-            <div className="proyect-box">
+            <div className="project-box">
               <img src={GiffApp} alt="" />
-              <div className="proyect-layer">
+              <div className="project-layer">
                 <h3>GUIFAFFINITY </h3>
                 <p>
                   App Buscador de Gifs creada con React y Typescript.
@@ -71,9 +69,9 @@ export const Proyects = () => {
 
         <div className="item-carrusel" id="item-carrusel-3">
           <div className="photo-carrusel" id="photo-carrusel-3">
-            <div className="proyect-box">
+            <div className="project-box">
               <img src={PokeApi} alt="" />
-              <div className="proyect-layer">
+              <div className="project-layer">
                 <h3>POKE API </h3>
                 <p>
                   Clásica Api de para buscar Pokemons creada con JavaScript,
@@ -96,8 +94,8 @@ export const Proyects = () => {
         </div>
       </div>
 
-      {/* <div className="proyects-container"> */}
-      {/* <div className="proyect-box">
+      {/* <div className="projects-container"> */}
+      {/* <div className="project-box">
           <img src={FlutterApp} alt="" />
           <div className="poryect-layer">
             <h3>SM Institute Flutter App </h3>
@@ -113,7 +111,7 @@ export const Proyects = () => {
           </div>
         </div>
 
-        <div className="proyect-box">
+        <div className="project-box">
           <img src={GiffApp} alt="" />
           <div className="poryect-layer">
             <h3>GuiffAffinity </h3>
@@ -127,7 +125,7 @@ export const Proyects = () => {
           </div>
         </div>
 
-        <div className="proyect-box">
+        <div className="project-box">
           <img src={PokeApi} alt="" />
           <div className="poryect-layer">
             <h3>Poke Api </h3>
