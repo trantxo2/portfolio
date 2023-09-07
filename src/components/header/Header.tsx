@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
@@ -56,7 +57,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-title">
-        <a href="/">Portfolio.</a>
+        <Link to="/">Portfolio.</Link>
       </div>
 
       <i
@@ -67,14 +68,14 @@ function Header() {
 
       <nav className={`navbar ${menuActive ? 'active' : ''}`}>
         {sectionsData.map((section) => (
-          <a
+          <Link
             key={section.id}
-            href={`${section.path}`}
+            to={`${section.path}`}
             className={section.id === 'inicio' ? 'active' : ''}
             onClick={closeMenu}
           >
             {section.label}
-          </a>
+          </Link>
         ))}
       </nav>
     </div>
