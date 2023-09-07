@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.94e2edc1.css",
+    "main.js": "/portfolio/static/js/main.d42d7ad9.js",
+    "static/media/GiffApp.png": "/portfolio/static/media/GiffApp.867b422ca68f68f4d178.png",
+    "static/media/Flutter_app.png": "/portfolio/static/media/Flutter_app.b9b4dde2cc8fa682f045.png",
+    "static/media/Profile2.png": "/portfolio/static/media/Profile2.938c3697ea184bfd6ea9.png",
+    "static/media/PokeApi.png": "/portfolio/static/media/PokeApi.6e5019459b1b64d178ab.png",
+    "index.html": "/portfolio/index.html",
+    "main.94e2edc1.css.map": "/portfolio/static/css/main.94e2edc1.css.map",
+    "main.d42d7ad9.js.map": "/portfolio/static/js/main.d42d7ad9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e2edc1.css",
+    "static/js/main.d42d7ad9.js"
+  ]
+}
