@@ -57,7 +57,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-title">
-        <Link to="/">Portfolio.</Link>
+        <Link to="/portfolio/">Portfolio.</Link>
       </div>
 
       <i
@@ -70,7 +70,7 @@ function Header() {
         {sectionsData.map((section) => (
           <Link
             key={section.id}
-            to={`${section.path}`}
+            to={`/portfolio${section.path}`}
             className={section.id === 'inicio' ? 'active' : ''}
             onClick={closeMenu}
           >
