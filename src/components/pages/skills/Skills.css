@@ -29,6 +29,7 @@
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -72,4 +73,18 @@
   position: relative;
   font-size: 1.5rem;
   color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 597px) {
+  .skills-box {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem 1rem 1rem;
+  }
 }
