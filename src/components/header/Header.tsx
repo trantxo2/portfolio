@@ -1,42 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.navbar a');
-
-    const handleScroll = () => {
-      const top = window.scrollY;
-
-      sections.forEach((sec) => {
-        const offset = sec.offsetTop - 150;
-        const height = sec.offsetHeight;
-        const id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-          navLinks.forEach((link) => {
-            link.classList.remove('active');
-          });
-          const activeLink = document.querySelector(
-            `.navbar a[href="/portfolio${id}"]`,
-          );
-          if (activeLink) {
-            activeLink.classList.add('active');
-          }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -71,7 +39,9 @@ function Header() {
           <Link
             key={section.id}
             to={`/portfolio${section.path}`}
-            className={section.id === 'inicio' ? 'active' : ''}
+            className={
+              location.pathname === `/portfolio${section.path}` ? 'active' : ''
+            }
             onClick={closeMenu}
           >
             {section.label}
