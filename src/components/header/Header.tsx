@@ -40,7 +40,10 @@ function Header() {
             key={section.id}
             to={`/portfolio${section.path}`}
             className={
-              location.pathname === `/portfolio${section.path}` ? 'active' : ''
+              location.pathname === `/portfolio${section.path}` ||
+              (section.path === '/' && location.pathname === '/portfolio')
+                ? 'active'
+                : ''
             }
             onClick={closeMenu}
           >
