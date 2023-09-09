@@ -8,7 +8,7 @@ import { useForm, ValidationError } from '@formspree/react';
 export const Contact = () => {
   const [state, handleSubmit] = useForm('mzblrpba');
   if (state.succeeded) {
-    return <p>ENVIADO!</p>;
+    return <div className="submitMessage">ENVIADO!</div>;
   }
 
   return (
