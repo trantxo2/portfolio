@@ -4,7 +4,8 @@
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background-color: var(--bg-color);
+  /* background-color: rgba(40, 44, 52, 0.1); */
+  background-color: transparent;
   color: var(--text-color);
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,7 @@
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
