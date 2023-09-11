@@ -1,16 +1,18 @@
 .header-container {
+  background-color: var(--bg-color);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  /* background-color: rgba(40, 44, 52, 0.1); */
-  background-color: transparent;
   color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+}
+.transparent-header {
+  background-color: transparent;
 }
 
 .header-title a {

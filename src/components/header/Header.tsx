@@ -14,9 +14,15 @@ function Header() {
     setMenuActive(false);
   };
 
+  const isMainPage = location.pathname === '/portfolio/';
+
+  const headerClasses = `header-container ${
+    isMainPage ? 'transparent-header' : ''
+  }`;
+  console.log(headerClasses);
+
   const sectionsData = [
     { id: 'home', label: 'Inicio', path: '/' },
-    // { id: 'home', label: 'Inicio', path: '/home' },
     { id: 'about', label: 'Sobre mí', path: '/home' },
     { id: 'skills', label: 'Habilidades', path: '/skills' },
     { id: 'projects', label: 'Proyectos', path: '/projects' },
@@ -24,7 +30,7 @@ function Header() {
   ];
 
   return (
-    <div className="header-container">
+    <div className={headerClasses}>
       <div className="header-title">
         <Link to="/portfolio/">Portfolio.</Link>
       </div>
