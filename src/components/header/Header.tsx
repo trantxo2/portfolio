@@ -19,7 +19,6 @@ function Header() {
   const headerClasses = `header-container ${
     isMainPage ? 'transparent-header' : ''
   }`;
-  console.log(headerClasses);
 
   const sectionsData = [
     { id: 'home', label: 'Inicio', path: '/' },
