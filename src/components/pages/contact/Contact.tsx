@@ -48,6 +48,9 @@ export const Contact = () => {
         <button type="submit">Enviar</button>
       </form>
       <SocialMediaIcons />
+      <div className="phone-num">
+        tel: <span>+34 610 33 78 69</span>
+      </div>
     </section>
   );
 };
