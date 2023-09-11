@@ -7,6 +7,7 @@ export const Skills = () => {
     { name: 'React', progressEndValue: 40 },
     { name: 'HTML5', progressEndValue: 80 },
     { name: 'CSS3', progressEndValue: 70 },
+    { name: 'Typescript', progressEndValue: 40 },
   ];
 
   const speed: number = 30;

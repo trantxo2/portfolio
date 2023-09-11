@@ -19,7 +19,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Colocar el pseudo-elemento por encima de la imagen de fondo */
+  z-index: 1;
 }
 
 .main-container {
@@ -45,4 +45,8 @@
     0.5
   ); /* Fondo oscuro semi-transparente solo detrás del .main-container */
   z-index: -1; /* Colocar el pseudo-elemento detrás del contenido del .main-container */
+}
+
+.download-button {
+  z-index: 1;
 }
