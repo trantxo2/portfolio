@@ -5,11 +5,13 @@ import { Contact } from './pages/contact/Contact';
 import { Home } from './pages/home/Home';
 import { Skills } from './pages/skills/Skills';
 import { Projects } from './pages/projects/Projects';
+import { Main } from './pages/main/main';
 
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/portfolio/" element={<Home />} />
+      <Route path="/portfolio/" element={<Main />} />
+      <Route path="/portfolio/home" element={<Home />} />
       <Route path="/portfolio/about" element={<About />} />
       <Route path="/portfolio/skills" element={<Skills />} />
       <Route path="/portfolio/projects" element={<Projects />} />

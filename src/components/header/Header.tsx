@@ -16,7 +16,8 @@ function Header() {
 
   const sectionsData = [
     { id: 'home', label: 'Inicio', path: '/' },
-    { id: 'about', label: 'Sobre mí', path: '/about' },
+    // { id: 'home', label: 'Inicio', path: '/home' },
+    { id: 'about', label: 'Sobre mí', path: '/home' },
     { id: 'skills', label: 'Habilidades', path: '/skills' },
     { id: 'projects', label: 'Proyectos', path: '/projects' },
     { id: 'contact', label: 'Contacto', path: '/contact' },

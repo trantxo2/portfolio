@@ -1,0 +1,46 @@
+.main {
+  position: relative; /* Establecer una posición relativa para permitir la superposición */
+  background-image: url('../../../assets/backgroundtransparent.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main h2 span {
+  color: var(--main-color);
+  margin-right: 0.5rem;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 1; /* Colocar el pseudo-elemento por encima de la imagen de fondo */
+}
+
+.main-container {
+  /* background-color: var(--bg-color, 0.1); */
+  border: 0.3rem solid var(--main-color);
+  border-radius: 1rem;
+  padding: 3rem 6rem;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.main-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo oscuro semi-transparente solo detrás del .main-container */
+  z-index: -1; /* Colocar el pseudo-elemento detrás del contenido del .main-container */
+}
