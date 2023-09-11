@@ -1,5 +1,6 @@
 .main {
-  position: relative; /* Establecer una posición relativa para permitir la superposición */
+  margin: 0;
+  padding: 0;
   background-image: url('../../../assets/backgroundtransparent.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,14 +10,15 @@
 .main h2 span {
   color: var(--main-color);
   margin-right: 0.5rem;
+  z-index: 2;
 }
 
 .main::before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1; /* Colocar el pseudo-elemento por encima de la imagen de fondo */
 }
 
