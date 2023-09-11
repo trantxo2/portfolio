@@ -19,10 +19,16 @@ export const Contact = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="input-box">
-          <input type="text" name="name" placeholder="Nombre y apellidos" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre y apellidos"
+            required
+          />
           <input
             id="email"
             type="email"
+            required
             name="email"
             placeholder="Dirección de correo"
           />
