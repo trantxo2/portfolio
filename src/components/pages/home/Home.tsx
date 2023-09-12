@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Typed from 'typed.js';
 import ProfileImage from '../../../assets/Profile2.png';
 import DownloadButton from '../../downloadButton';
+import { Fade } from 'react-awesome-reveal';
 
 export const Home = () => {
   const [typedText] = useState('');
@@ -29,29 +30,33 @@ export const Home = () => {
   return (
     <section id="home" className="home">
       <div className="info-container">
-        <h2>¡Hola! Me llamo </h2>
-        <h1>Iñaki Trantxo,</h1>
-        <div className="info-details-container">
-          <h2>
-            Y soy <span ref={textElement} key={typedText} />
-          </h2>
-          <p>
-            Futuro desarrollador frontend junior y amante del diseño web. Me
-            emociona convertir ideas en código a través de HTML, CSS y
-            JavaScript para crear experiencias geniales. ¡Tengo muchas ganas
-            para aprender y crecer en el mundo digital!
-          </p>
-        </div>
+        <Fade direction="left">
+          <h2>¡Hola! Me llamo </h2>
+          <h1>Iñaki Trantxo,</h1>
+          <div className="info-details-container">
+            <h2>
+              Y soy <span ref={textElement} key={typedText} />
+            </h2>
+            <p>
+              Futuro desarrollador frontend junior y amante del diseño web. Me
+              emociona convertir ideas en código a través de HTML, CSS y
+              JavaScript para crear experiencias geniales. ¡Tengo muchas ganas
+              para aprender y crecer en el mundo digital!
+            </p>
+          </div>
 
-        <SocialMediaIcons />
+          <SocialMediaIcons />
 
-        <div className="downloadButton-container">
-          <DownloadButton />
-        </div>
+          <div className="downloadButton-container">
+            <DownloadButton />
+          </div>
+        </Fade>
       </div>
 
       <div className="image-container">
-        <img src={ProfileImage} alt="" />
+        <Fade direction="right">
+          <img src={ProfileImage} alt="" />
+        </Fade>
       </div>
     </section>
   );

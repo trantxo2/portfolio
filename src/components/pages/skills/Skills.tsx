@@ -1,6 +1,6 @@
 import './Skills.css';
-
 import React, { useEffect, useState } from 'react';
+import { Zoom, Slide } from 'react-awesome-reveal';
 
 export const Skills = () => {
   const skillsData = [
@@ -55,24 +55,29 @@ export const Skills = () => {
     return () => {
       intervals.forEach((interval) => clearInterval(interval));
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [progressValues]);
 
   return (
     <section id="skills" className="skills">
-      <h1 className="title">
-        Mis <span>Habilidades</span>
-      </h1>
-
+      <Slide direction="down">
+        {' '}
+        <h1 className="title">
+          Mis <span>Habilidades</span>
+        </h1>
+      </Slide>
       <div className="skills-container">
-        {skillsData.map((skill, index) => (
-          <div className="skills-box" key={index}>
-            <i className={`bx bxl-${skill.name.toLowerCase()}`}></i>
-            <h2>{skill.name}</h2>
-            <div className="progress-circle">
-              <div className="progress"></div>
+        <Zoom>
+          {skillsData.map((skill, index) => (
+            <div className="skills-box" key={index}>
+              <i className={`bx bxl-${skill.name.toLowerCase()}`}></i>
+              <h2>{skill.name}</h2>
+              <div className="progress-circle">
+                <div className="progress"></div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Zoom>
       </div>
     </section>
   );
