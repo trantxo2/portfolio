@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bfdf3ff1.css",
-    "main.js": "/portfolio/static/js/main.916071be.js",
+    "main.js": "/portfolio/static/js/main.f3a3e0f8.js",
     "static/media/backgroundtransparent.png": "/portfolio/static/media/backgroundtransparent.15a97327861a9e5839c2.png",
     "static/media/GiffApp.png": "/portfolio/static/media/GiffApp.867b422ca68f68f4d178.png",
     "static/media/Flutter_app.png": "/portfolio/static/media/Flutter_app.b9b4dde2cc8fa682f045.png",
@@ -9,10 +9,10 @@
     "static/media/PokeApi.png": "/portfolio/static/media/PokeApi.6e5019459b1b64d178ab.png",
     "index.html": "/portfolio/index.html",
     "main.bfdf3ff1.css.map": "/portfolio/static/css/main.bfdf3ff1.css.map",
-    "main.916071be.js.map": "/portfolio/static/js/main.916071be.js.map"
+    "main.f3a3e0f8.js.map": "/portfolio/static/js/main.f3a3e0f8.js.map"
   },
   "entrypoints": [
     "static/css/main.bfdf3ff1.css",
-    "static/js/main.916071be.js"
+    "static/js/main.f3a3e0f8.js"
   ]
 }
