@@ -10,12 +10,12 @@ import { Main } from './pages/main/main';
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/portfolio/" element={<Main />} />
-      <Route path="/portfolio/home" element={<Home />} />
-      <Route path="/portfolio/about" element={<About />} />
-      <Route path="/portfolio/skills" element={<Skills />} />
-      <Route path="/portfolio/projects" element={<Projects />} />
-      <Route path="/portfolio/contact" element={<Contact />} />
+      <Route path="/" element={<Main />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 };

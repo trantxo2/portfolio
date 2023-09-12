@@ -14,7 +14,7 @@ function Header() {
     setMenuActive(false);
   };
 
-  const isMainPage = location.pathname === '/portfolio/';
+  const isMainPage = location.pathname === '/';
 
   const headerClasses = `header-container ${
     isMainPage ? 'transparent-header' : ''
@@ -31,7 +31,7 @@ function Header() {
   return (
     <div className={headerClasses}>
       <div className="header-title">
-        <Link to="/portfolio/">Portfolio.</Link>
+        <Link to="/">Portfolio.</Link>
       </div>
 
       <i
@@ -44,10 +44,10 @@ function Header() {
         {sectionsData.map((section) => (
           <Link
             key={section.id}
-            to={`/portfolio${section.path}`}
+            to={`${section.path}`}
             className={
-              location.pathname === `/portfolio${section.path}` ||
-              (section.path === '/' && location.pathname === '/portfolio')
+              location.pathname === `${section.path}` ||
+              (section.path === '/' && location.pathname === '')
                 ? 'active'
                 : ''
             }
