@@ -1,7 +1,7 @@
 import './Contact.css';
 import SocialMediaIcons from 'components/socialMediaIcons';
 import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import { Slide, Fade } from 'react-awesome-reveal';
 
 export const Contact = () => {
