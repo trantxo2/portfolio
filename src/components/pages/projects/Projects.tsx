@@ -3,6 +3,7 @@ import React from 'react';
 import FlutterApp from '../../../assets/Flutter_app.png';
 import GiffApp from '../../../assets/GiffApp.png';
 import PokeApi from '../../../assets/PokeApi.png';
+import TresEnRalla from '../../../assets/tres_en_ralla.png';
 import { Slide } from 'react-awesome-reveal';
 
 export const Projects = () => {
@@ -15,7 +16,7 @@ export const Projects = () => {
 
         <div className="carrusel">
           <div className="item-carrusel" id="item-carrusel-1">
-            <div className="photo-carrusel" id="photo-carrusel-1">
+            <div className="photo-carrusel">
               <div className="project-box">
                 <img src={FlutterApp} alt="" />
                 <div className="project-layer">
@@ -34,7 +35,7 @@ export const Projects = () => {
               </div>
             </div>
             <div className="arrows-carrusel">
-              <a href="#item-carrusel-3">
+              <a href="#item-carrusel-4">
                 <i className="bx bx-chevron-left"></i>
               </a>
               <a href="#item-carrusel-2">
@@ -44,7 +45,7 @@ export const Projects = () => {
           </div>
 
           <div className="item-carrusel" id="item-carrusel-2">
-            <div className="photo-carrusel" id="photo-carrusel-2">
+            <div className="photo-carrusel">
               <div className="project-box">
                 <img src={GiffApp} alt="" />
                 <div className="project-layer">
@@ -70,7 +71,7 @@ export const Projects = () => {
           </div>
 
           <div className="item-carrusel" id="item-carrusel-3">
-            <div className="photo-carrusel" id="photo-carrusel-3">
+            <div className="photo-carrusel">
               <div className="project-box">
                 <img src={PokeApi} alt="" />
                 <div className="project-layer">
@@ -87,6 +88,29 @@ export const Projects = () => {
             </div>
             <div className="arrows-carrusel">
               <a href="#item-carrusel-2">
+                <i className="bx bx-chevron-left"></i>
+              </a>
+              <a href="#item-carrusel-4">
+                <i className="bx bx-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="item-carrusel" id="item-carrusel-4">
+            <div className="photo-carrusel">
+              <div className="project-box">
+                <img src={TresEnRalla} alt="" />
+                <div className="project-layer">
+                  <h3>Trés en ralla </h3>
+                  <p>App de trés en ralla creada con react.</p>
+                  <a href="https://github.com/trantxo2/tres_en_ralla">
+                    <i className="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="arrows-carrusel">
+              <a href="#item-carrusel-3">
                 <i className="bx bx-chevron-left"></i>
               </a>
               <a href="#item-carrusel-1">
